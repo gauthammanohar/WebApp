@@ -3,15 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About this Page', 
-  pageText:'Here is some info about this Project',
-  var:'This about my page'
- });
+  res.render('about', {name: 'About'});
 });
 
 router.get ('/', function(req,res,next) {
-  res.render('index',{title:'Welcome to the Project Tracker'});
+  res.render('index',{name:'GAUTHAM MANOHAR'});
 });
 
 
 module.exports = router;
+ 
